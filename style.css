@@ -1,0 +1,282 @@
+section {
+  padding: 1rem 5%;
+}
+
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.heading span {
+  font-size: 1.5rem;
+  color: white;
+  background: rgb(0, 81, 255);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+
+.destination .heading span {
+  font-size: 1.5rem;
+  color: white;
+  background: rgb(0, 81, 255);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+
+.heading span.space {
+  background: none;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-family: Viga;
+  font-size: 32px;
+}
+
+.nav-link {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* Utility */
+.tombol {
+  text-transform: capitalize;
+  border-radius: 40px;
+}
+
+/* Slider */
+.carousel-item {
+  height: 32rem;
+  background: rgb(0, 0, 0);
+  color: white;
+  position: relative;
+}
+
+.carousel-item .container {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: 150px;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+
+.carousel-item .container p {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.6);
+  font-size: 16px;
+}
+
+.carousel-item .container h1 {
+  font-size: 48px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+/* Info Panel */
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -100px;
+  background-color: white;
+  z-index: 1;
+  padding: 30px;
+}
+
+.info-panel img {
+  height: 70px;
+  width: 70px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Workingspace */
+.workingspace {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.workingspace h3 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.workingspace p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 30 0px;
+  text-align: justify;
+}
+
+.workingspace img {
+  max-height: 500px;
+}
+
+/* Card */
+.card img {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Review */
+.container .cp {
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .cp .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .cp .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #000000;
+}
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box {
+  min-height: 110px;
+}
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgba(0, 81, 255, 0.856);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover {
+  background: rgb(0, 81, 255);
+}
+
+.card {
+  max-width: 540px;
+}
+
+/* DESTOP VERSION */
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: capitalize;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0450dd;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .carousel-item .container p {
+    font-size: 18px;
+  }
+
+  .heading span {
+    font-size: 2rem;
+  }
+
+  .workingspace {
+    text-align: left;
+  }
+
+  .carousel-item .container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 150px;
+    position: absolute;
+    color: white;
+    text-align: center;
+  }
+}
+
+/* DESTOP VERSION */
+@media (max-width: 1233px) {
+  .card {
+    max-width: 420px;
+  }
+}
+
+/* DESTOP VERSION */
+@media (max-width: 992px) {
+  .card {
+    max-width: 640px;
+  }
+}
+
+/* DESTOP VERSION */
+@media (max-width: 576px) {
+  .carousel-item .container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 170px;
+    position: absolute;
+    color: white;
+    text-align: center;
+  }
+
+  .carousel-item .container h1 {
+    font-size: 36px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+}
